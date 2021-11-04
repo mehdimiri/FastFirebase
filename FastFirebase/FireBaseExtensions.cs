@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace FastFirebase
 {
-    public static class FireBaseExtensions
+    public static class FirebaseExtensions
     {
-        public static IServiceCollection AddPushe(this IServiceCollection services, Action<PushOptions> setupAction)
+        public static IServiceCollection AddFirebase(this IServiceCollection services, Action<PushOptions> setupAction)
         {
             if (services == null)
             {
