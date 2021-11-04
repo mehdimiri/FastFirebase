@@ -17,3 +17,4 @@ To install FastFirebase, run the following command in the Package Manager Consol
 </svg>
     </clipboard-copy>
   </div></div>
+<p>You can also view the <a href="https://www.nuget.org/packages/FastFirebase" rel="nofollow">package page</a> on NuGet.</p>
