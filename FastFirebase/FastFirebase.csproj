@@ -6,12 +6,13 @@
     <Description>Send push notification by Firebase</Description>
     <PackageProjectUrl>https://github.com/mehdimiri/FastFirebase</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mehdimiri/FastFirebase</RepositoryUrl>
-    <PackageTags>push,push-notifications,firebase</PackageTags>
+    <PackageTags>push,push-notifications,firebase,asp.net,core</PackageTags>
     <PackageLicenseExpression></PackageLicenseExpression>
     <Authors>Mehdi Miri</Authors>
     <Company />
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

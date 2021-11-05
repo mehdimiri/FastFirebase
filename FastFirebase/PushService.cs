@@ -14,7 +14,7 @@ namespace FastFirebase
     {
 
         private readonly PushOptions _options;
-        private const string _fireBaseApi = "https://panel.pushe.co/api/v1/notifications/";
+        private const string _fireBaseApi = "https://fcm.googleapis.com/fcm/send";
         public PushService(IOptions<PushOptions> options)
         {
             _options = options != null ? options.Value : throw new ArgumentNullException(nameof(options));
