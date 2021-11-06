@@ -21,7 +21,7 @@ namespace FastFirebase
 
         }
 
-        public async Task SendPushNotificationAsync(PushJsonModel pushJsonModel)
+        public async Task SendPushAsync(PushJsonModel pushJsonModel)
         {
             var messageInformation = new NotificationMessage()
             {

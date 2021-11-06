@@ -6,6 +6,6 @@ namespace FastFirebase
 {
     public interface IPushService
     {
-        Task SendPushNotificationAsync(PushJsonModel pushJsonModel);
+        Task SendPushAsync(PushJsonModel pushJsonModel);
     }
 }

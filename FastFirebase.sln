@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFirebase", "FastFirebase\FastFirebase.csproj", "{7A1FADAA-52CD-433B-BF95-D0890BFB662E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFirebase", "FastFirebase\FastFirebase.csproj", "{7A1FADAA-52CD-433B-BF95-D0890BFB662E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFirebase.Example.Console", "FastFirebase.Example.Console\FastFirebase.Example.Console.csproj", "{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7A1FADAA-52CD-433B-BF95-D0890BFB662E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A1FADAA-52CD-433B-BF95-D0890BFB662E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A1FADAA-52CD-433B-BF95-D0890BFB662E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
