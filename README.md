@@ -18,24 +18,24 @@ To install FastFirebase, run the following command in the Package Manager Consol
 <pre lang="code">
 <code>
  services.AddFirebase(options=>
-                {
-                  options.ServerKey = "FIREBASE_SERVER_KEY";
-                 });
+          {
+             options.ServerKey = "FIREBASE_SERVER_KEY";
+          });
 </code>
 </pre>
 3- Send push notification by using IPushService:
 <pre lang="code">
 <code>
-               var pushService = serviceProvider.GetRequiredService<IPushService>();
+      var serviceProvider = GetServiceProvider();
+      var pushService = serviceProvider.GetRequiredService<IPushService>();
 
-                var model = new PushJsonModel
-                {
-                        deviceTokens = new string[] { "DeviceToken1" ,"DeviceToken2"  },
-                        title = "test",
-                        body = "this is a test",
-                        data = 'OBJECT_MODEL'
-                };
-
-                await pushService.SendPushNotificationAsync(model);
+      var model = new PushJsonModel
+      {
+          deviceTokens = new string[] { "DeviceToken1", "DeviceToken2" },
+          title = "test",
+          body = "this is a test",
+          data = null
+      };
+      await pushService.SendPushAsync(model);
 </code>
 </pre>
