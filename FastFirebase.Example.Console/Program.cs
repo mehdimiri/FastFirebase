@@ -27,11 +27,9 @@ namespace FastFirebase.Example.Console
                 deviceTokens = new string[] { "DeviceToken1", "DeviceToken2" },
                 title = "test",
                 body = "this is a test",
-                data = 'OBJECT_MODEL'
+                data = null
             };
-
             await pushService.SendPushAsync(model);
-
         }
 
         private static IServiceProvider GetServiceProvider()
