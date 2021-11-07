@@ -25,7 +25,10 @@ To install FastFirebase, run the following command in the Package Manager Consol
 </pre>
 3- Send push notification by using IPushService:
 <p>
-    <a href='https://github.com/mehdimiri/FastFirebase/blob/master/FastFirebase.Example.Console/Program.cs'>FastFirebase.Example.Console</a>
+    <a href='https://github.com/mehdimiri/FastFirebase/blob/master/FastFirebase.Example.Console/Program.cs'>FastFirebase.Example.Console</a>    
+</p>
+<p>
+    <a href='https://github.com/mehdimiri/FastFirebase/tree/master/FastFirebase.Example.MvcCore'>FastFirebase.Example.MvcCore</a>
 </p>
 <pre lang="code">
 <code>
