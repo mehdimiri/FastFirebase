@@ -23,9 +23,9 @@ namespace FastFirebase
 
         public async Task SendPushAsync(PushJsonModel pushJsonModel)
         {
-            var messageInformation = new NotificationMessage()
+            var messageInformation = new 
             {
-                notification = new Notification()
+                notification = new 
                 {
                     title = pushJsonModel.title,
                     text = pushJsonModel.body
@@ -37,8 +37,36 @@ namespace FastFirebase
             using (var client = new HttpClient())
             {
                 var request = new HttpRequestMessage(HttpMethod.Post, _fireBaseApi);
-                request.Headers.TryAddWithoutValidation("Authorization", "key=" + _options.ServerKey);
+                request.Headers.TryAddWithoutValidation("Authorization", $"key={ _options.ServerKey}");
                 request.Content = new StringContent(jsonMessage, Encoding.UTF8, "application/json");
+                var response = await client.SendAsync(request);
+                var responseBody = await response.Content.ReadAsStringAsync();
+            }
+        }
+
+        public async Task SendChannelAsync(ChannelJsonModel channelJsonModel)
+        {
+            var messageInformation = new
+            {
+                to = $"/topics/{channelJsonModel.channelName}",
+                priority = "high",
+                notification = new
+                {
+                    body = channelJsonModel.body,
+                    title = channelJsonModel.title,
+                    priority = "high",
+                    content_available = true,
+                    subtitle = channelJsonModel.subTitle
+                }
+            };
+
+            string jsonMessage = JsonConvert.SerializeObject(messageInformation);
+            using (var client = new HttpClient())
+            {
+                var request = new HttpRequestMessage(HttpMethod.Post, _fireBaseApi);
+                request.Headers.TryAddWithoutValidation("Authorization", $"key={_options.ServerKey}");
+                request.Content = new StringContent(jsonMessage, Encoding.UTF8, "application/json");
+
                 var response = await client.SendAsync(request);
                 var responseBody = await response.Content.ReadAsStringAsync();
             }

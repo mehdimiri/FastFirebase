@@ -22,14 +22,24 @@ namespace FastFirebase.Example.Console
             var serviceProvider = GetServiceProvider();
             var pushService = serviceProvider.GetRequiredService<IPushService>();
 
-            var model = new PushJsonModel
+            var pushJsonModel = new PushJsonModel
             {
                 deviceTokens = new string[] { "DeviceToken1", "DeviceToken2" },
                 title = "test",
                 body = "this is a test",
                 data = null
             };
-            await pushService.SendPushAsync(model);
+            await pushService.SendPushAsync(pushJsonModel);
+
+
+            var channelJsonModel = new ChannelJsonModel
+            {
+                channelName = "channelName",
+                subTitle = "test",
+                title = "test",
+                body = "this is a test"
+            };
+            await pushService.SendChannelAsync(channelJsonModel);
         }
 
         private static IServiceProvider GetServiceProvider()

@@ -7,5 +7,6 @@ namespace FastFirebase
     public interface IPushService
     {
         Task SendPushAsync(PushJsonModel pushJsonModel);
+        Task SendChannelAsync(ChannelJsonModel channelJsonModel);
     }
 }

@@ -12,7 +12,7 @@
     <Company />
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <PackageIcon>icons8-firebase-48.png</PackageIcon>
     <PackageIconUrl />
   </PropertyGroup>

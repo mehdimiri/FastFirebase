@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFirebase", "FastFirebase\FastFirebase.csproj", "{7A1FADAA-52CD-433B-BF95-D0890BFB662E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFirebase.Example.Console", "FastFirebase.Example.Console\FastFirebase.Example.Console.csproj", "{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFirebase.Example.Console", "FastFirebase.Example.Console\FastFirebase.Example.Console.csproj", "{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastFirebase.Example.MvcCore", "FastFirebase.Example.MvcCore\FastFirebase.Example.MvcCore.csproj", "{DC953DF5-BAB9-4EB4-AD46-8025F94F4D01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52E4792D-99EE-44E4-8DBE-124A5FEF30DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC953DF5-BAB9-4EB4-AD46-8025F94F4D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC953DF5-BAB9-4EB4-AD46-8025F94F4D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC953DF5-BAB9-4EB4-AD46-8025F94F4D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC953DF5-BAB9-4EB4-AD46-8025F94F4D01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

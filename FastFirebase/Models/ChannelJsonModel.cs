@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace FastFirebase.Models
 {
-    class Notification
+    public class ChannelJsonModel
     {
+        public string channelName { get; set; }
         public string title { get; set; }
-        public string text { get; set; }
+        public string body { get; set; }
+        public string subTitle { get; set; }
     }
 }
