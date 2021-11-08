@@ -3,7 +3,7 @@
 A simple library to send push notification by FastFirebase
 </p>
 <h2> Install via NuGet</h2>
-To install FastFirebase, run the following command in the Package Manager Console
+To install FastFirebase, run the following command in Package Manager Console
 <pre lang="code">
 <code>
     pm> Install-Package FastFirebase
